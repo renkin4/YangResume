@@ -83,7 +83,19 @@ p.lead
 
 .dev-icons
 {
-  font-size: 3rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.skill-rows
+{
+  padding: 0.5rem;
+
+}
+
+.skill-progress
+{
+  padding-top: 0.6rem;
 }
 
 .dev-icons .list-inline-item i:hover
