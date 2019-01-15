@@ -40,7 +40,7 @@ h2
 
 h3
 {
-  font-size: 2rem;
+  font-size: 2rem ;
 }
 
 p.lead
@@ -234,6 +234,15 @@ a:hover, a:focus, a:active
 
 .portfolio-img
 {
-  height: 40%;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+@media (max-width: 992px)
+{
+  .portfolio-img
+  {
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
