@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
   <head>
 
@@ -8,7 +8,8 @@
     <meta name="description" content="Yang Resume">
     <meta name="author" content="Yang">
 
-    <title>Yang Resume</title>
+    <title lang = "en">Yang Resume</title>
+    <title lang = "cn">扬 恢复</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +30,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Tan Wei Yang</span>
+        <span class="d-block d-lg-none" lang = "en">Tan Wei Yang</span>
+        <span class="d-block d-lg-none" lang = "cn">陈威扬</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
@@ -39,26 +41,43 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <li class="nav-item" style = "color : white;">
+            <label class="langRadio">English
+              <input type="radio" onclick="select_language('en')" value = "en" name = "lang" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <label class="langRadio">中文
+              <input type="radio" onclick="select_language('cn')" value = "cn" name = "lang">
+              <span class="checkmark"></span>
+            </label>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+            <a class="nav-link js-scroll-trigger" href="#about" lang = "en">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about" lang = "cn">关于我</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+            <a class="nav-link js-scroll-trigger" href="#experience" lang = "en">Experience</a>
+            <a class="nav-link js-scroll-trigger" href="#experience" lang = "cn">经验</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#education" lang = "en">Education</a>
+            <a class="nav-link js-scroll-trigger" href="#education" lang = "cn">教育背景</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">PortFolio</a>
+            <a class="nav-link js-scroll-trigger" href="#skills" lang = "en">Skills</a>
+            <a class="nav-link js-scroll-trigger" href="#skills" lang = "cn">专业技能</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#sideProject">Side Project</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio" lang = "en">PortFolio</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio" lang = "cn">作品集</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#sideProject" lang = "en">Side Project</a>
+            <a class="nav-link js-scroll-trigger" href="#sideProject" lang = "cn">个人作品</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#interests" lang = "en">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#interests" lang = "cn">兴趣</a>
           </li>
         </ul>
       </div>
@@ -71,14 +90,19 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Tan Wei
-            <span class="text-primary">Yang</span>
+          <h1 class="mb-0" lang = "en">Tan Wei
+            <span class="text-primary" lang = "en">Yang</span>
+          </h1>
+          <h1 class="mb-0" lang = "cn">陈威
+            <span class="text-primary" lang = "cn">扬</span>
           </h1>
           <div class="subheading mb-5">(+60) 10-2187-218 ·
             <a href="mailto:yangah9991@gmail.com">yangah9991@gmail.com</a>
           </div>
-          <p class="lead mb-2">I found joy in developing games, a joy that's hard to explain in words. I especially love making multiplayer games. The feeling of connecting people together to experience the world I created is a weird but oddly satisfying feeling. As such, I have dedicated most of my Game Development career to research and improve on my skills in that particular department. </p>
-          <p class="lead mb-5">I always had dreamt even before my Game Development career. I dream of making a MMO game, a world which my team & I have carefully crafted and moulded. It's a big dream and there's a long road ahead but I will be persistent and continue to walk this road towards my goal.</p>
+          <p class="lead mb-2" lang = "en">I found joy in developing games, a joy that's hard to explain in words. I especially love making multiplayer games. The feeling of connecting people together to experience the world I created is a weird but oddly satisfying feeling. As such, I have dedicated most of my Game Development career to research and improve on my skills in that particular department. </p>
+          <p class="lead mb-5" lang = "en">I always had dreamt even before my Game Development career. I dream of making a MMO game, a world which my team & I have carefully crafted and moulded. It's a big dream and there's a long road ahead but I will be persistent and continue to walk this road towards my goal.</p>
+          <p class="lead mb-2" lang = "cn">我会在游戏开发中发现乐趣，那是一种无法言喻的快乐。我尤其喜欢制作多人游戏。创造一个可用把人们连接到一起的世界给了我极大的满足感。因此，我游戏开发经历中的大多数时间都在研究和改善我这方面的技术。我还没有进入游戏开发行业的时候，我常常梦想。</p>
+          <p class="lead mb-5" lang = "cn">梦想可以开发一款MMO游戏，一个我和我的队友们精心雕琢的世界。这是一个很遥远的梦想并且前方的路很艰难，但是我会在我追梦的道路上不断前进。</p>
           <div class="social-icons">
             <a href="https://www.linkedin.com/in/tan-wei-yang-396305179/">
               <i class="fab fa-linkedin-in"></i>
@@ -103,45 +127,59 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
+          <h2 class="mb-5" lang = "en">Experience</h2>
+          <h2 class="mb-5" lang = "cn">工作经历</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-3">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Game Programmer</h3>
+              <h3 class="mb-0" lang = "en">Game Programmer</h3>
+              <h3 class="mb-0" lang = "cn">游戏逻辑程序员</h3>
               <div class="subheading mb-2">Ammobox</div>
-              <p class="mb-1">As a Gameplay Programmer at Ammobox Studios. I was responsible for the following things:</p>
+              <p class="mb-1" lang = "en">As a Gameplay Programmer at Ammobox Studios. I was responsible for the following things:</p>
+              <p class="mb-1" lang = "cn">在 Ammobox Studios 作为一名游戏逻辑程序员，我负责以下工作:</p>
               <ol>
-                <li> Getting Prototypes Out </li>
-                <li> Designing New System Architecture </li>
-                <li> Handling and Optimizing the Net code in <strong>Eximius Seize The Front Line.</strong> </li>
-                <li> Debugging the game from Legacy to Current Codes </li>
-                <li> Refactoring and Optimization of Legacy Codes. </li>
-                <li> Setting up UI Functionality </li>
-                <li> (Not related to gameplay) I was responsible for <a href = "https://www.seizethefrontline.com/">www.seizethefrontline.com</a> and the presskit page </li>
+                <li lang = "en"> Getting Prototypes Out </li>
+                <li lang = "cn"> 游戏原型的构造 </li>
+                <li lang = "en"> Designing New System Architecture </li>
+                <li lang = "cn"> 设计游戏系统架构 </li>
+                <li lang = "en"> Handling and Optimizing the Net code in <strong>Eximius Seize The FrontLine.</strong> </li>
+                <li lang = "cn"> 编写以及优化 <strong>Eximius seize The FrontLine</strong> 的网络相关代码。 </li>
+                <li lang = "en"> Debugging the game from Legacy to Current Codes </li>
+                <li lang = "cn"> 遗留代码的 Debugging </li>
+                <li lang = "en"> Refactoring and Optimization of Legacy Codes. </li>
+                <li lang = "cn"> 遗留代码的重构与优化. </li>
+                <li lang = "en"> Setting up UI Functionality </li>
+                <li lang = "cn"> 实现 UI 内部逻辑 </li>
+                <li lang = "en"> (Not related to gameplay) I was responsible for <a href = "https://www.seizethefrontline.com/">www.seizethefrontline.com</a> and the presskit page </li>
+                <li lang = "cn"> (游戏开发无关) <a href = "https://www.seizethefrontline.com/">www.seizethefrontline.com </a> 的开发与维护 </li>
               </ol>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">15 January 2018 - Present</span>
+              <span class="text-primary">January 2018 - February 2019</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-3">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Lecturer</h3>
+              <h3 class="mb-0" lang = "en">Lecturer</h3>
+              <h3 class="mb-0" lang = "cn">讲师</h3>
               <div class="subheading mb-2">MyEdventure</div>
-              <p>The experience I have in this lecture is a little special. I was studying while teaching freshmen. The responsibility I was given was to teach students 3 languages.</p>
-              <p>I was responsible to teach them <strong>HTML, CSS and JavaScript</strong>. </p>
+              <p lang = "en">The experience I have in this lecture is a little special. I was studying while teaching freshmen. The responsibility I was given was to teach students 3 languages.</p>
+              <p lang = "en">I was responsible to teach them <strong>HTML, CSS and JavaScript</strong>. </p>
+              <p lang = "cn">我作为讲师的经历有些特殊。我给新人上课的同时自己也在学习。我负责的是教给学生三种网络相关语言，HTML,CSS,JavaScript.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">30 July 2017 - 3 September 2017</span>
+              <span class="text-primary">July 2017 - September 2017</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-3">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">QA Programmer</h3>
+              <h3 class="mb-0" lang = "en">QA Programmer</h3>
+              <h3 class="mb-0" lang = "cn">QA 程序员</h3>
               <div class="subheading mb-2">Centre for Content Creation(CCC)</div>
-              <p> I was student back then, asked by lecturer to help out CCC with a project called Startfall Catalyst. My responsibility was to catch and fix bugs. The game was powered by Unity3D written in C#. I took the opportunity together with a Senior of mine to taste what it is like to work on a industry project.</p>
+              <p lang = "en"> I was student back then, asked by lecturer to help out CCC with a project called Startfall Catalyst. My responsibility was to catch and fix bugs. The game was powered by Unity3D written in C#. I took the opportunity together with a Senior of mine to taste what it is like to work on a industry project.</p>
+              <p lang = "cn">那时我还是一名学生，被当时的导师邀请去帮助 CCC 参与一个叫做 Startfall Catalyst 的游戏的开发。我当时负责一些 bug 的寻找和修改。Startfall Catalyst 是一款使用 Unity3D 引擎，C#语言的游戏。我和我的学长第一次感受到在参与工业级的项目的滋味。</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">January 2016 - May 2016</span>
@@ -159,13 +197,18 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="mb-5" lang = "en">Education</h2>
+          <h2 class="mb-5" lang = "cn"> 教育背景 </h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">LimKokWing University</h3>
-              <div class="subheading mb-3">Bachelor of Science (Hons) in Games Technology</div>
-              <div>Games Technology</div>
+              <h3 class="mb-0" lang = "en">LimKokWing University</h3>
+              <h3 class="mb-0" lang = "cn">林国荣创意科技大学</h3>
+              <div class="subheading mb-3" lang = "en">Bachelor of Science (Hons) in Games Technology</div>
+              <div class="subheading mb-3" lang = "en">游戏技术本科</div>
+              <div lang = "en">Games Technology</div>
+              <div lang = "cn">游戏技术</div>
+
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">2015 - 2017</span>
@@ -174,9 +217,12 @@
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">LimKokWing University</h3>
-              <div class="subheading mb-3">Foundation degree, Information Technology</div>
-              <div>Information Technology</div>
+              <h3 class="mb-0" lang = "en">LimKokWing University</h3>
+              <h3 class="mb-0" lang = "cn">林国荣创意科技大学</h3>
+              <div class="subheading mb-3" lang = "en">Foundation degree, Information Technology</div>
+              <div class="subheading mb-3" lang = "cn">计算机科学预科</div>
+              <div lang = "en">Information Technology</div>
+              <div lang = "cn">计算机科</div>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">2014 - 2014</span>
@@ -413,6 +459,9 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <!-- localization JavaScript -->
+    <script src = "js/localization.js"></script>
 
   </body>
 
